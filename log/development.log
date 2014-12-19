@@ -1,0 +1,33 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-19 08:19:02 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /opt/rubies/ruby-2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.2.0.rc2/lib/rails/templates/rails/welcome/index.html.erb (5.4ms)
+Completed 200 OK in 37ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-19 08:19:05 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /opt/rubies/ruby-2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.2.0.rc2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-19 08:20:48 +0000
+Processing by DockerController#index as HTML
+  Rendered docker/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 532ms (Views: 531.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ea2706bc2d0586731b7c00ec2cd0a414.js?body=1" for 127.0.0.1 at 2014-12-19 08:20:48 +0000
+
+
+Started GET "/assets/application-823e88bf1231c4323ee1d35731d8f1b6.css?body=1" for 127.0.0.1 at 2014-12-19 08:20:48 +0000
+
+
+Started GET "/assets/jquery_ujs-99f13489684e179b71ca7517fb74318d.js?body=1" for 127.0.0.1 at 2014-12-19 08:20:48 +0000
+
+
+Started GET "/assets/application-8546e402798cc69a0e2ef2d4ca6260d6.js?body=1" for 127.0.0.1 at 2014-12-19 08:20:48 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2014-12-19 08:20:48 +0000

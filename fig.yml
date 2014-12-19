@@ -1,0 +1,7 @@
+web:
+  build: .
+  command: foreman start -f Procfile
+  volumes:
+    - .:/app
+  ports:
+   - "80:80"

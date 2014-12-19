@@ -51,10 +51,3 @@ ADD /config/docker/nginx-sites.conf /etc/nginx/sites-enabled/default
 WORKDIR /app
 ADD . /app
 RUN bundle install
-
-# Add default foreman config
-ADD /config/docker/Procfile /app/Procfile
-
-CMD foreman start -f Procfile
-
-EXPOSE 80

@@ -1,11 +1,16 @@
 rails-nginx-docker
 ==================
+### Install docker
+`https://docs.docker.com/installation/mac/`
+
+### Mac 启动需要
+`boot2docker start`
+
+### Install fig
+`brew install fig`
 
 ### build
-`docker build -t rails-nginx-docker .`
+`fig build`
 
 ### run
-`docker run -it -p 80:80 rails-nginx-docker`
-
-### login
-`docker run -i -t rails-nginx-docker /bin/bash`
+`fig up`

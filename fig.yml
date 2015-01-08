@@ -4,4 +4,4 @@ web:
   volumes:
     - .:/app
   ports:
-   - "80:80"
+    - "80:80"

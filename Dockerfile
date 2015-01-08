@@ -15,11 +15,11 @@ RUN cd /tmp &&\
   cd ruby-install-0.4.3/ &&\
   make install
 
-# Install MRI Ruby 2.1.5
-RUN ruby-install ruby 2.1.5 -- --enable-shared
+# Install MRI Ruby 2.2.0
+RUN ruby-install ruby 2.2.0 -- --enable-shared
 
 # Add Ruby binaries to $PATH
-ENV PATH /opt/rubies/ruby-2.1.5/bin:$PATH
+ENV PATH /opt/rubies/ruby-2.2.0/bin:$PATH
 
 # Add options to gemrc
 RUN echo "gem: --no-document" > ~/.gemrc
@@ -49,5 +49,7 @@ ADD /config/docker/nginx-sites.conf /etc/nginx/sites-enabled/default
 
 # Install Rails App
 WORKDIR /app
-ADD . /app
+ADD Gemfile /app/Gemfile  
+ADD Gemfile.lock /app/Gemfile.lock  
 RUN bundle install
+ADD . /app
